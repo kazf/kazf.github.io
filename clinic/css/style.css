@@ -1,0 +1,264 @@
+@import url(../font/UtsukushiFONT.otf);
+
+.utsukushi{
+    font-family: "02うつくし明朝体";
+    text-decoration: none;
+}
+
+  header{
+  height: 50vh;
+  max-height: 350px;
+    margin: auto auto 5px auto;
+
+    background-image: url(../photos/yama_sinryoujo.jpg);
+    background-repeat:  no-repeat;
+    background-position:  center;
+    background-size: 100%;
+
+  border-radius: 5px;
+ /* background-size:  90%;*/
+  border:solid 3px #ccc;
+  }
+
+
+header a {
+    font-family: "02うつくし明朝体";
+    text-decoration: none;
+}
+
+header h1{
+  text-align: right;
+  margin-right: 20px;
+  font-size: 200%;
+}
+
+/*header p {*/
+  /*color: green;*/
+  /*font-size: 120%;*/
+  /*: 150px 500px;*/
+/*}*/
+
+
+nav ul {
+  overflow: hidden;
+  background-image: url(../photos/tileable.jpg);
+  border-radius: 5px;
+  border:solid 3px #ccc;
+  margin: 0;
+  padding: 0
+}
+
+nav ul li {
+  font-family: "02うつくし明朝体";
+  text-decoration: none;
+  font-size: 130%;
+  font-weight: 900;
+  color: #FFF;
+  list-style: none;
+  width: 100vw;
+  height: 30px;
+  float: left;
+  margin: 0;
+  padding: auto 10px 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  background-position: 10px 28px;
+  /*opacity: 0.2;*/
+}
+
+.bgclr{
+  background-color: orange;
+}
+
+
+nav ul li a {
+  text-decoration:  none;
+  vertical-align: middle;
+}
+
+.main{
+  clear: both;
+}
+
+#table_b{
+  margin: 30px 30px 30px 50px;
+  float: left;
+}
+
+#table_a{
+  /*margin-left: 350px;*/
+  margin: 0 auto 0 auto;
+  /*float: left;*/
+  /*clear: both;*/
+}
+
+.table1{
+  font-size:130%;
+  padding: 5px 0 0 10px;
+  border-bottom: solid 1px orange;
+  border-right: solid 1px orange;
+  /*float: right;*/
+}
+
+.table2{
+  font-size:130%;
+  padding: 5px 0 0 10px;
+  border-bottom: solid 1px orange;
+}
+
+#table_a tr:nth-child(2n){
+  background-color: #ccc;
+}
+
+#table_b tr:nth-child(2n+1){
+  background-color: #ccc;
+}
+
+.item {
+  border:solid 3px #ccc;
+  border-radius: 5px;
+  background: #edf;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+
+.item1 {
+  border:solid 3px #ccc;
+  border-radius: 5px;
+  background: #edf;
+  padding: 15px;
+  margin: 5px;
+  /*text-align: center;*/
+}
+
+.item_2 {
+  border:solid 3px #ccc;
+  border-radius: 5px;
+  background: #edf;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+img.stuff{
+  max-width:100%;
+  height:auto;
+}
+
+p {
+  text-align: left;
+}
+
+footer {
+  text-align: right;
+  font-family: "02うつくし明朝体";
+  text-decoration: none;
+
+}
+
+
+/* Responsive */
+@media ( min-width : 680px ){
+
+.flexbox_2 {
+display: -webkit-flex;
+display: flex;
+-webkit-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-flex-direction: column;
+flex-direction: column;
+max-height: 800px;
+}
+
+.item_2 {
+width: 20%;
+}
+
+  .flexbox1 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+     flex-wrap: wrap;
+  }
+
+  .item {
+    width: 20.3%;
+  }
+
+  .item1 {
+    width: 100%;
+  }
+
+body{
+  max-width: 980px;
+}
+
+  header{
+    height: 70vh;
+    max-height: 680px;
+    /*height:600px;*/
+    width: auto;
+    max-width:980px;
+    background-size: 100%;
+    margin: auto auto 5px auto;
+    background-image: url(../photos/yama_sinryoujo.jpg);
+    background-repeat:  no-repeat;
+    background-position:  center;
+    border-radius: 5px;
+    /*background-size:  90%;*/
+    border:solid 3px #ccc;
+  }
+
+header h1{
+  text-align: right;
+  margin-right: 20px;
+  font-size: 300%;
+  font-family: "02うつくし明朝体";
+}
+
+nav ul li {
+  width: 160px;
+}
+
+}
+
+@media ( max-width : 400px ){
+
+
+body{
+  max-width: 380px;
+}
+
+  header{
+    height: 70vh;
+    max-height: 200px;
+    /*height:600px;*/
+    width: auto;
+    max-width:380px;
+    background-size: 100%;
+    margin: auto auto 5px auto;
+    background-image: url(../photos/yama_sinryoujo.jpg);
+    background-repeat:  no-repeat;
+    background-position:  center;
+    border-radius: 5px;
+    /*background-size:  90%;*/
+    border:solid 3px #ccc;
+  }
+
+header h1{
+  text-align: right;
+  margin-right: 10px;
+  font-size: 150%;
+}
+
+nav ul li {
+  width: 100vw;
+}
+
+}
