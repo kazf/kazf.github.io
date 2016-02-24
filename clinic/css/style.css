@@ -1,16 +1,21 @@
-@import url(../font/UtsukushiFONT.otf);
+/*@import url(../font/UtsukushiFONT.otf);*/
+
+@font-face {
+  font-family: "02うつくし明朝体";
+  src:  url("../font/UtsukushiFONT.otf")  format('opentype');
+}  
 
 .utsukushi{
     font-family: "02うつくし明朝体";
 }
 
 a:link {
-  color: #fff;
+  color: green;
   text-decoration: none;
   /*font-size: 200%;*/
 }
 a:visited {
-  color: green;
+  color: #000;
 }
 
 a:hover {
@@ -34,18 +39,17 @@ a:hover {
   border:solid 3px #ccc;
   }
 
-header{
-transition: background-image 3.0s ease 0s;
--webkit-transition: background-image 3.0s ease 0s;
--moz-transition: background-image 3.0s ease 0s;
--ms-transition: background-image 3.0s ease 0s;
--o-transition: background-image 3.0s ease 0s;
-
+.slideshow{
+transition: background-image 2.0s linear 0s;
+/*-webkit-transition: background-image 2.0s linear 0s;*/
+/*-moz-transition: background-image 2.0s linear 0s;*/
+/*-ms-transition: background-image 2.0s linear 1s;*/
+/*-o-transition: background-image 2.0s linear 1s;*/
 /*opacity:0;*/
 }
-header:hover {
-opacity:1.0;
-}
+/*header:hover {*/
+/*opacity:1.0;*/
+/*}*/
 
 
 header h1{
@@ -67,7 +71,7 @@ nav ul {
   border-radius: 5px;
   border:solid 3px #ccc;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 nav ul li {
@@ -79,11 +83,11 @@ nav ul li {
   width: 100vw;
   height: 30px;
   float: left;
-  margin: 0;
-  padding: auto 10px 5px 0;
+  margin: 8px 0 0px 0;
+  /*padding: auto 10px 5px 0;*/
   border-radius: 5px;
   text-align: center;
-  background-position: 10px 28px;
+  /*background-position: 10px 28px;*/
   /*opacity: 0.2;*/
 }
 
@@ -249,7 +253,7 @@ body{
 
   header{
     height: 70vh;
-    max-height: 680px;
+    max-height: 650px;
     /*height:600px;*/
     width: auto;
     max-width:980px;
