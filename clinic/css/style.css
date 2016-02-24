@@ -2,8 +2,22 @@
 
 .utsukushi{
     font-family: "02うつくし明朝体";
-    text-decoration: none;
 }
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+  /*font-size: 200%;*/
+}
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: orange;
+}
+
+
 
   header{
   height: 50vh;
@@ -20,11 +34,6 @@
   border:solid 3px #ccc;
   }
 
-
-header a {
-    font-family: "02うつくし明朝体";
-    text-decoration: none;
-}
 
 header h1{
   text-align: right;
@@ -50,7 +59,6 @@ nav ul {
 
 nav ul li {
   font-family: "02うつくし明朝体";
-  text-decoration: none;
   font-size: 130%;
   font-weight: 900;
   color: #FFF;
@@ -67,14 +75,13 @@ nav ul li {
 }
 
 .bgclr{
-  background-color: orange;
+  background-color: #ADFFB5;
 }
 
 
-nav ul li a {
-  text-decoration:  none;
+/*nav ul li a {
   vertical-align: middle;
-}
+}*/
 
 .main{
   clear: both;
@@ -117,7 +124,8 @@ nav ul li a {
 .item {
   border:solid 3px #ccc;
   border-radius: 5px;
-  background: #edf;
+  background: linear-gradient(white, #ADFFB5);
+  /*background: #edf;*/
   padding: 15px;
   margin: 5px;
   text-align: center;
@@ -126,16 +134,23 @@ nav ul li a {
 .item1 {
   border:solid 3px #ccc;
   border-radius: 5px;
-  background: #edf;
+  background: linear-gradient(white, #ADFFB5);
+  /*background: #edf;*/
   padding: 15px;
   margin: 5px;
   /*text-align: center;*/
 }
 
+div.item1 h1 {
+  font-size:130%;
+}
+
+
 .item_2 {
   border:solid 3px #ccc;
   border-radius: 5px;
-  background: #edf;
+    background: linear-gradient(white, #ADFFB5);
+  /*background: #edf;*/
   padding: 15px;
   margin: 5px;
   text-align: center;
@@ -158,10 +173,11 @@ p {
 footer {
   text-align: right;
   font-family: "02うつくし明朝体";
-  text-decoration: none;
-
 }
 
+.to-top{
+  padding: 30px ;
+}
 
 /* Responsive */
 @media ( min-width : 680px ){
@@ -219,7 +235,6 @@ header h1{
   text-align: right;
   margin-right: 20px;
   font-size: 300%;
-  font-family: "02うつくし明朝体";
 }
 
 nav ul li {
@@ -259,6 +274,10 @@ header h1{
 
 nav ul li {
   width: 100vw;
+}
+
+div.item1 h1 {
+  font-size:120%;
 }
 
 }
