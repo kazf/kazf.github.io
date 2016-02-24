@@ -10,7 +10,7 @@ var i = 0;
 // 最大数
 var max = bgImages.length-1;
 // 切り替わる速度(1000 = 1秒)
-var timer = 5000; 
+var timer = 3000; 
 
 // ここから画像の変更
 setInterval(function(){
